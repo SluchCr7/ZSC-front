@@ -2,7 +2,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-const page = () => {
+const History = () => {
   const [name, setName] = useState("التاسيس")
   const [desc , setDesc] = useState("تاسس نادي الزمالك في 5 يناير عام 1911 من قبل البلجيكي جورج مرزباخ ليضم في عضويته في البداية المصريين والاجانب")
   const data = [
@@ -111,7 +111,7 @@ const page = () => {
         {
           data.map((item, index) => {
             return (
-              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 , delay: 1*index }} key={index} className={`relative  py-[10px] px-[50px] w-[50%] h-[130px] flex items-center justify-center  cont ${item.right ? "left-[50.4%]" : ""}`}>
+              <motion.div key={index} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 , delay: 1*index }} key={index} className={`relative  py-[10px] px-[50px] w-[50%] h-[130px] flex items-center justify-center  cont ${item.right ? "left-[50.4%]" : ""}`}>
                 <span
                   onClick={() => {
                   setName(item.name)
@@ -134,4 +134,4 @@ const page = () => {
   )
 }
 
-export default page
+export default History

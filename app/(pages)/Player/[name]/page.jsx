@@ -1,7 +1,7 @@
 import React from 'react'
 import { PlayersTeam } from '@/app/Players'
 import Image from 'next/image'
-const page = ({ params }) => {
+const player = ({ params }) => {
     const name = params.name
     const player = PlayersTeam.find((player) => player.nameLink === name)
     const Data = [
@@ -76,4 +76,4 @@ const page = ({ params }) => {
   )
 }
 
-export default page
+export default Player

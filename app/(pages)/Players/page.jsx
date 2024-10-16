@@ -2,7 +2,7 @@ import React from 'react'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import PlayerCard from '@/app/components/PlayerCard'
 import { PlayersTeam } from '@/app/Players'
-const page = () => {
+const Players = () => {
   const Links = [
     "اللاعبون",
     "حراس المرمي",
@@ -69,4 +69,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Players

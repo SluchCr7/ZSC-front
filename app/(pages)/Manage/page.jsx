@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-const page = () => {
+const Manage = () => {
     const AltManagers = [
         {
             name: "احمد سليمان",
@@ -96,4 +96,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Manage

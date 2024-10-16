@@ -10,7 +10,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';// Login API Call
 import { register } from '../../redux/apiCall/registerCall';
-const page = () => {
+const Register = () => {
     const [show, setShow] = useState(false)
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
@@ -58,4 +58,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Register

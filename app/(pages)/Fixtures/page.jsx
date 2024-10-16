@@ -7,7 +7,7 @@ import { GiWhistle } from "react-icons/gi";
 import { MdOutlineStadium } from "react-icons/md";
 import { IoTime } from "react-icons/io5";
 
-const page = () => {
+const Fixtures = () => {
     const [fixtures, setFixtures] = useState([])
     const [loading, setLoading] = useState(false)
     const [value, setValue] = useState("الدوري المصري")
@@ -78,4 +78,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Fixtures

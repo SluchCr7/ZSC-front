@@ -4,9 +4,9 @@ import axios from 'axios'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-const page = () => {
+const Table = () => {
     const [standings, setStandings] = useState([])
-useEffect(() => {
+    useEffect(() => {
     axios.get("https://v3.football.api-sports.io/standings?league=233&season=2021",
     {
         headers: {
@@ -21,7 +21,7 @@ useEffect(() => {
     .catch((err) => {
         console.log(err)
     })
-  }, [])
+    }, [])
     return (
     <div className="w-full py-5 flex items-center bg-MODE1-primary dark:bg-MODE2-primary flex-col gap-3">
         <span className="text-xl text-MODE1-third tracking-[7px] dark:text-MODE2-third font-bold ">League Table</span>
@@ -102,7 +102,7 @@ useEffect(() => {
                 }
         </table>
     </div>
-  )
+    )
 }
 
-export default page
+export default Table

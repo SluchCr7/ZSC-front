@@ -10,7 +10,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';// Login API Call
 import {useDispatch , useSelector} from 'react-redux'
 import { login , logout } from '../../redux/apiCall/authCall';
-const page = () => {
+const Login = () => {
     const [show, setShow] = useState(false)
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -56,4 +56,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Login
