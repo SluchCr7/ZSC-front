@@ -41,7 +41,7 @@ const Login = () => {
                 </div>
                 <button className='bg-MODE1-third text-MODE1-primary dark:text-MODE2-primary dark:bg-MODE2-add p-3 rounded-lg w-[400px]' type='submit'>Login</button>
             </form>
-            <span className='text-lg text-MODE1-add dark:text-MODE2-add font-semibold py-3'>Don't have an account? <Link href={'/Register'} className='text-MODE1-add dark:text-MODE2-add font-semibold'>Register</Link></span>
+            <span className='text-lg text-MODE1-add dark:text-MODE2-add font-semibold py-3'>Don&apos;t have an account? <Link href={'/Register'} className='text-MODE1-add dark:text-MODE2-add font-semibold'>Register</Link></span>
             <div className='flex items-center gap-3 pt-5'>
                 <hr className='w-[150px] border-[1px] border-MODE1-secondary' />
                 <span className='text-MODE1-add dark:text-MODE2-add text-2xl uppercase'>or</span>

@@ -111,7 +111,7 @@ const History = () => {
         {
           data.map((item, index) => {
             return (
-              <motion.div key={index} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 , delay: 1*index }} key={index} className={`relative  py-[10px] px-[50px] w-[50%] h-[130px] flex items-center justify-center  cont ${item.right ? "left-[50.4%]" : ""}`}>
+              <motion.div key={index} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 , delay: 1*index }}  className={`relative  py-[10px] px-[50px] w-[50%] h-[130px] flex items-center justify-center  cont ${item.right ? "left-[50.4%]" : ""}`}>
                 <span
                   onClick={() => {
                   setName(item.name)

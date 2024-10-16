@@ -37,9 +37,9 @@ const Fixtures = () => {
         </select>
         {
             loading ?
-            fixtures.map((match) => {
+            fixtures.map((match , index) => {
             return (
-                <div className="w-[60%] p-6 container mx-auto flex items-center justify-between gap-3">
+                <div key={index} className="w-[60%] p-6 container mx-auto flex items-center justify-between gap-3">
                     <div className="flex items-start gap-3 flex-col">
                         <div className="flex items-center gap-3">
                             <span className="text-MODE1-secondary dark:text-MODE2-secondary font-bold text-xl"><IoTime /></span>
