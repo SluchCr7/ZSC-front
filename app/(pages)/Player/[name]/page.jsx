@@ -1,7 +1,7 @@
 import React from 'react'
 import { PlayersTeam } from '@/app/Players'
 import Image from 'next/image'
-const player = ({ params }) => {
+const Player = ({ params }) => {
     const name = params.name
     const player = PlayersTeam.find((player) => player.nameLink === name)
     const Data = [
